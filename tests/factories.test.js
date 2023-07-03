@@ -18,3 +18,26 @@ test('Count Employees Number by Factory', () => {
         { name: 'BR4', count: 0 },
     ])
 })
+
+// Test countFactoriesByEmployee
+test('Count Factories Number by Employee', () => {
+    const factories = [
+        { name: "BR1", employees: ["John", "Alice", "Bob", "Jessie", "Karen"] },
+        { name: "BR2", employees: ["Jessie", "Karen", "John"] },
+        { name: "BR3", employees: ["Miles", "Eric", "Henry", "Bob"] },
+        { name: "BR4", employees: [] }
+    ]
+
+    const factoryCounts = countFactoriesByEmployee(factories)
+
+    expect(factoryCounts).toEqual([
+        { employee: 'John', count: 2 },
+        { employee: 'Alice', count: 1 },
+        { employee: 'Bob', count: 2 },
+        { employee: 'Jessie', count: 2 },
+        { employee: 'Karen', count: 2 },
+        { employee: 'Miles', count: 1 },
+        { employee: 'Eric', count: 1 },
+        { employee: 'Henry', count: 1 },
+    ])
+})
