@@ -1,5 +1,24 @@
-function countTotalHoursWorked() {
-    // Count total hours worked in 1 day ? // => 39
+const { hoursDifference } = require('./utils')
+
+
+/**
+ * Count Employees Number by Factory
+ * @param {Array} employeeType
+ * @param {Array} employees
+ * @returns {number}
+ */
+function countTotalHoursWorked(employeeType, employees) {
+    const workingHours = {}
+    employeeType.forEach(type => {
+        workingHours[type.id] = hoursDifference(type.work_begin, type.work_end)
+    })
+
+    let totalHoursWorked = 0
+    employees.forEach(employee => {
+        totalHoursWorked += workingHours[employee.type]
+    })
+
+    return totalHoursWorked
 }
 
 function howManyEmplyeeBytime() {
