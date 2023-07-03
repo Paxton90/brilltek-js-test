@@ -1,0 +1,23 @@
+{
+  "name": "brilltek-js-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paxton90/brilltek-js-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paxton90/brilltek-js-test/issues"
+  },
+  "homepage": "https://github.com/Paxton90/brilltek-js-test#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
