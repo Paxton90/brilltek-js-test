@@ -10,11 +10,17 @@
 ## Topics
 
 1. Count Employees Number by Factory // => [ {name: 'BR1', count: 4}, ... ]
+    - src/factories.js/countEmployeesByFactory
 2. Count Factories Number by Employee // => [ {employee: 'John', count: 2}, ... ]
+    - src/factories.js/countFactoriesByEmployee
 3. Order employees list by alphabetical order // =>   { name: "BR2", employees: ["Jessie", "John", "Karen"] }
+    - src/factories.js/orderEmployeesAlphabetically
 4. Count total hours worked in 1 day ? // => 39
+    - src/employees.js/countTotalHoursWorked
 5. Make a function that take as parameters dayTime and return number of employee working // howManyEmployeeByTime(time) => int
+    - src/employees.js/howManyEmployeeBytime
 6. How many days of work needed to done all tasks ? // => 1 day = 9:00 to 00:00 between 00:00 and 09:00 doesnt count.
+    - src/employees.js/calculateNeededDays
 
 ## Test Data
 
