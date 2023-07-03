@@ -1,5 +1,12 @@
 # Brilltek javascript test
 
+## Results
+
+1. Check simple result
+    - npm run result
+2. Check tests
+    - npm run test
+
 ## Topics
 
 1. Count Employees Number by Factory // => [ {name: 'BR1', count: 4}, ... ]
@@ -53,10 +60,3 @@ const tasks = [
 ];
 
 ```
-
-## Results
-
-1. Check simple result
-    - npm run result
-2. Check tests
-    - npm run test
