@@ -37,8 +37,17 @@ function countFactoriesByEmployee(factories) {
     return formattedFactoryCounts
 }
 
-function orderEmployeesAlphabetically() {
-    // Order employees list by alphabetical order // => { name: "BR2", employees: ["Jessie", "John", "Karen"] }
+/**
+ * Count Factories Number by Employee
+ * @param {Object} factory
+ * @returns {Object}
+ */
+function orderEmployeesAlphabetically(factory) {
+    orderedFactory = {
+        name: factory.name,
+        employees: factory.employees.sort()
+    }
+    return orderedFactory
 }
 
 module.exports = {
