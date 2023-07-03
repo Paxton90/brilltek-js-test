@@ -13,8 +13,28 @@ function countEmployeesByFactory(factories) {
     return employeeCounts
 }
 
-function countFactoriesByEmployee() {
-    // Count Factories Number by Employee // => [ {employee: 'John', count: 2}, ... ]
+
+/**
+ * Count Factories Number by Employee
+ * @param {Array} factories
+ * @returns {Array}
+ */
+function countFactoriesByEmployee(factories) {
+    const factoryCounts = {}
+    factories.forEach(factory => {
+        factory.employees.forEach(employee => {
+            factoryCounts[employee] = (factoryCounts[employee] | 0) + 1
+        })
+    })
+
+
+    // format to [{employee: employee, count: count}]
+    formattedFactoryCounts = []
+    Object.keys(factoryCounts).forEach(employee => {
+        formattedFactoryCounts.push({employee: employee, count: factoryCounts[employee]})
+    })
+
+    return formattedFactoryCounts
 }
 
 function orderEmployeesAlphabetically() {
