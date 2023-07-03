@@ -53,3 +53,10 @@ const tasks = [
 ];
 
 ```
+
+## Results
+
+1. Check simple result
+    - npm run result
+2. Check tests
+    - npm run test
