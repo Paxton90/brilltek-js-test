@@ -20,7 +20,7 @@
 5. Make a function that take as parameters dayTime and return number of employee working // howManyEmployeeByTime(time) => int
     - src/employees.js/howManyEmployeeBytime
 6. How many days of work needed to done all tasks ? // => 1 day = 9:00 to 00:00 between 00:00 and 09:00 doesnt count.
-    - src/employees.js/calculateNeededDays
+    - src/tasks.js/calculateNeededDays
 
 ## Test Data
 
