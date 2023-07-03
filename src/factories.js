@@ -1,5 +1,16 @@
+/**
+ * Count Employees Number by Factory
+ * @param {Array} factories
+ * @returns {Array}
+ */
 function countEmployeesByFactory(factories) {
-    // Count Employees Number by Factory // => [ {name: 'BR1', count: 4}, ... ]
+    const employeeCounts = factories.map(factory => {
+        return {
+            name: factory.name,
+            count: factory.employees.length
+        }
+    })
+    return employeeCounts
 }
 
 function countFactoriesByEmployee() {
