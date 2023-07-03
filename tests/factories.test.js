@@ -41,3 +41,12 @@ test('Count Factories Number by Employee', () => {
         { employee: 'Henry', count: 1 },
     ])
 })
+
+// Test orderEmployeesAlphabetically
+test('Order employees list by alphabetical order', () => {
+    const factory = { name: "BR2", employees: ["Jessie", "Karen", "John"] }
+
+    const orderedFactory = orderEmployeesAlphabetically(factory)
+
+    expect(orderedFactory).toEqual({ name: "BR2", employees: ["Jessie", "John", "Karen"] })
+})
